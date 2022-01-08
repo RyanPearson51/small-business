@@ -17,7 +17,7 @@ const Map = ({ inputAddress }) => {
     const findAddress = () => {
         if (inputAddress) {
              //still havent figured out the google api, but this is where i would get the key from the .env file
-            Geocode.setApiKey(process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
+            Geocode.setApiKey(process.env.GOOGLE_MAP_API_KEY);
 
             Geocode.fromAddress(inputAddress).then(
                 (response) => {
@@ -40,7 +40,7 @@ const Map = ({ inputAddress }) => {
 
     const loader = new Loader({
         //still havent figured out the google api, but this is where i would get the key from the .env file
-        apiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+        apiKey: process.env.GOOGLE_MAP_API_KEY,
         version: "weekly"
     });
 
@@ -59,6 +59,9 @@ const Map = ({ inputAddress }) => {
     })
         .catch(e => console.log('Error: ', e));
 
+        useEffect(() => {
+            findAddress();
+        }, [inputAddress])
     
     return (
         <div>
