@@ -14,7 +14,8 @@ const Listing = ({ listings }) => {
             <h1>{currentListing.name}</h1>
             <p><strong>{currentListing.address}</strong></p>
             <p><strong>{currentListing.hours}</strong></p>
-            <p>{currentListing.description}</p>
+            <p><strong>{currentListing.description}</strong></p>
+            <p>{'Coordinates:'} {currentListing.lat} {currentListing.long}</p>
             <Map inputAddress={currentListing.address} />
         </Container >
     );

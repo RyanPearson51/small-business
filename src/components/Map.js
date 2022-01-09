@@ -1,6 +1,6 @@
-//through an example i was able to figure out how to get the map to appear on the page and default to a certain area, 
+//through an example i was able to figure out how to get the map to appear on the page and default to a hardcoded area, 
 //but i had trouble setting up google cloud platform and getting the actual api to work
-//in 301 we didnt use this and something in my setup was not functioning correctly
+//in 301 we didnt use gcp and something in my setup for it was not functioning correctly.
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Loader } from "@googlemaps/js-api-loader"
