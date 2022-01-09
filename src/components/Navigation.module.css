@@ -3,13 +3,12 @@
 }
 
 .navListItem a {
-    padding: 0.6rem;
+    padding: 0.8rem;
     color: #fff;
     text-decoration: none;
 }
 
 .navListItem a:hover,
-.navListItem a:active,
-.navListItem a:focus {
+.navListItem a:active{
     background: rgba(255,255,255,.1);
 }

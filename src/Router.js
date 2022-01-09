@@ -4,7 +4,7 @@ import cookie from "cookie";
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Listings from './containers/Listings';
 import Listing from './containers/Listing';
-import CreateListing from './containers/CreateListing'
+import AddListing from './containers/AddListing'
 import Login from './containers/Login';
 
 const checkAuth = () => {
@@ -26,7 +26,7 @@ const Router = () => {
                 path="/listing/create"
                 element={
                     <ProtectedRoute>
-                        <CreateListing />
+                        <AddListing />
                     </ProtectedRoute>
                 } />
             <Route path="/login" element={<Login />}

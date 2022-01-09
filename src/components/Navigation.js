@@ -47,8 +47,8 @@ const Navigation = ({
     return (
         <AppBar position="static" sx={{ backgroundColor: '#3CB471' }}>
             <Container maxWidth="xl">
-                <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
-                    {/* Title - Desktop */}
+                <Toolbar  sx={{ justifyContent: 'space-between' }}>
+                    {/* Desktop Title */}
                     <Typography
                         variant="h6"
                         noWrap
@@ -95,7 +95,7 @@ const Navigation = ({
                             {user.isLoggedIn && <MenuItem onClick={handleLogout}><Link to="/logout" >Logout</Link></MenuItem>}
                         </Menu>
                     </Box>
-                    {/* Title - Mobile */}
+                    {/* Mobile Title */}
                     <Typography
                         variant="h6"
                         noWrap
@@ -104,7 +104,7 @@ const Navigation = ({
                     >
                         Austin Small Businesses
                     </Typography>
-                    {/* Menu - Desktop */}
+                    {/* Menu */}
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <ul className={styles.navList}>
                             <li className={styles.navListItem}><Link to="/" >Listings</Link></li>
